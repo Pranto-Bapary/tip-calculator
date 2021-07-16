@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip Calculator App</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images//favicon-32x32.png" type="image/x-icon">
+
+  <!-- Custom CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+
+      <div class="tip-logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+
+      <div class="tip-wrapper">
+        <div class="tip-content-left">
+          <div class="tip-bill">
+            <label>Bill</label>
+            <div class="input-container">
+              <input type="text" class="input-form" id="bill" placeholder="0">
+              <img src="images/icon-dollar.svg" class="icon-img" alt="dollar icon">
+              <p id="error" class="error"></p>
+            </div>
+          </div>
+
+          <div class="tip-percentage">
+            <label>Select Tip %</label>
+
+            <div class="tip-percentages">
+              <button class="btn btn-1" value="5" onclick="return validation(),calculateTip(this.value/100)">5%</button>
+              <button class="btn btn-2" value="10" onclick="return validation(),calculateTip(this.value/100)">10%</button>
+              <button class=" btn btn-3" value="15" onclick="return validation(),calculateTip(this.value/100)">15%</button>
+              <button class=" btn btn-4" value="25" onclick="return validation(),calculateTip(this.value/100)">25%</button>
+              <button class=" btn btn-5" value="50" onclick="return validation(),calculateTip(this.value/100)">50%</button>
+              <input type=" text" class="custom-tip-box" id="customTipBox" placeholder="Custom">
+            </div>
+
+          </div>
+
+          <div class="tip-people-number">
+            <label>Number of People</label>
+            <div class="input-container">
+              <input type="text" class="tip-people" id="tipPeople" placeholder="0">
+              <img src="images/icon-person.svg" alt="person icon">
+              <p id="error" class="error"></p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="tip-content-right">
+          <div class="tip-right-wrapper">
+
+            <div class="inner-wrapper">
+              <div class="tip-amount">
+                <p>Tip Amount</p>
+                <span>/ person</span>
+              </div>
+
+              <div class="tip-value">
+                <h3 id="displayTipAmount">$0.00</h3>
+              </div>
+
+            </div>
+
+            <div class="inner-wrapper">
+              <div class="tip-amount">
+                <p>Total</p>
+                <span>/ person</span>
+              </div>
+
+              <div class="tip-value">
+                <h3 id="displayTotalAmount">$0.00</h3>
+              </div>
+
+            </div>
+
+            <div class="button-reset">
+              <button type="submit" class="btn-reset">Reset</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2021 By Pranto Bapary. All Rights Reserved.</p>
+  </footer>
+
+  <!--Main JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
