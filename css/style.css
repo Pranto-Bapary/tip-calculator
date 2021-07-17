@@ -130,6 +130,10 @@ Tip Left Column
   text-align: right;
 }
 
+.tip-content-left .tip-percentages .custom-tip-box {
+  text-align: center;
+}
+
 .tip-content-left .tip-bill .input-form:focus,
 .tip-content-left .tip-bill .input-form:active,
 .tip-content-left .tip-people-number .tip-people:focus,
@@ -248,7 +252,7 @@ Tip Right Column
   transition: 0.5s ease-in-out;
 }
 
-.btn-reset:hover{
+.btn-reset:hover {
   background: var(--primary-color);
   color: var(--black-color);
 }

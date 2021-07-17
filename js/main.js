@@ -32,8 +32,9 @@ function calculateTip(tip) {
 resetButton.addEventListener('click', function () {
     tipAmountDisplay.innerHTML = "$0.00"
     totalAmountDisplay.innerHTML = "$0.00"
-    bill.value = 0;
-    people.value = 0;
+    bill.value = 0
+    people.value = 0
+    customTipValue.value = ""
 })
 
 
@@ -42,21 +43,37 @@ resetButton.addEventListener('click', function () {
  -----------------*/
 function validation() {
 
-    if (bill.value == "" || bill.value === "" || bill.value == 0 || bill.value === 0) {
+    if (bill.value == "" || bill.value == 0) {
         bill.focus()
+        bill.style.borderColor = "red"
         errorMsg[0].innerHTML = "Can't be zero"
+        return false
+
+    } else if (bill.value < 0) {
+        bill.focus()
+        bill.style.borderColor = "red"
+        errorMsg[0].innerHTML = "Can't be a negative number"
         return false
 
     } else {
         errorMsg[0].innerHTML = ""
+        bill.style.borderColor = "var(--primary-color)"
     }
 
-    if (people.value == 0 || people.value === 0 || people.value == "" || people.value === "") {
+    if (people.value == 0 || people.value == "") {
         people.focus()
+        people.style.borderColor = "red"
         errorMsg[1].innerHTML = "Can't be zero"
         return false
+
+    } else if (people.value < 0) {
+        people.focus()
+        people.style.borderColor = "red"
+        errorMsg[1].innerHTML = "Can't be a negative number"
+        return false
+
     } else {
         errorMsg[1].innerHTML = ""
+        people.style.borderColor = "var(--primary-color)"
     }
-
 }
