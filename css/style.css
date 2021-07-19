@@ -55,6 +55,9 @@ input {
   outline: none;
 }
 
+/* ----------------------
+Form Validation Message 
+---------------------*/
 .error {
   display: inline;
   position: absolute;
@@ -64,6 +67,9 @@ input {
   color: red;
 }
 
+/* -------------
+Container
+--------------*/
 .container {
   max-width: 1440px;
   width: 100%;
@@ -72,6 +78,9 @@ input {
   overflow: hidden;
 }
 
+/* -------------
+Tip Logo
+--------------*/
 .tip-logo {
   text-align: center;
   margin-bottom: 30px;
@@ -82,6 +91,9 @@ input {
   height: 50px;
 }
 
+/* -------------
+Tip Wrapper 
+--------------*/
 .tip-wrapper {
   max-width: 900px;
   width: 100%;
@@ -95,12 +107,15 @@ input {
 }
 
 /* -----------------
-Tip Left Column 
+Tip Left Section 
 ------------------*/
 .tip-content-left {
   padding: 20px;
 }
 
+/* -------------
+Tip Bill
+--------------*/
 .tip-content-left .tip-bill {
   margin-bottom: 30px;
 }
@@ -143,6 +158,9 @@ Tip Left Column
   border: 2px solid var(--primary-color);
 }
 
+/* -------------
+Tip Percentage 
+--------------*/
 .tip-percentages {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -150,6 +168,9 @@ Tip Left Column
   margin-bottom: 30px;
 }
 
+/* ---------------------
+Tip Percentage Buttons
+---------------------*/
 .tip-percentages .btn {
   display: inline-block;
   padding: 12px 40px;
@@ -174,6 +195,9 @@ Tip Left Column
   margin-bottom: 10px;
 }
 
+/*-----------------------------
+ Custom Tip Input Percentage  
+ ---------------------------*/
 .tip-percentages input {
   height: 50px;
   width: 100%;
@@ -191,7 +215,7 @@ Tip Left Column
 }
 
 /* -----------------
-Tip Right Column 
+Tip Right Section
 ------------------*/
 .tip-content-right {
   background: var(--secondary-color);
@@ -200,6 +224,9 @@ Tip Right Column
   border-radius: 20px;
 }
 
+/* -----------------
+Tip Right Wrapper
+------------------*/
 .tip-right-wrapper {
   padding: 30px 40px;
 }
@@ -214,6 +241,9 @@ Tip Right Column
   margin-bottom: 0;
 }
 
+/* -----------------
+Tip Amount Display
+------------------*/
 .tip-amount p {
   color: var(--white-color);
   font-size: 1rem;
@@ -236,6 +266,9 @@ Tip Right Column
   color: var(--primary-color);
 }
 
+/* ------------
+Reset Button
+------------*/
 .btn-reset {
   width: 100%;
   height: 40px;
@@ -257,6 +290,9 @@ Tip Right Column
   color: var(--black-color);
 }
 
+/* --------------
+Footer Section
+--------------*/
 .footer {
   text-align: center;
 }
@@ -268,12 +304,15 @@ Tip Right Column
 /* -------------
 Responsive 
 --------------*/
+/*------------------- When Viewport Width is less than or equal to 800px ------------------------*/
 @media screen and (max-width: 800px) {
   .tip-percentages .btn {
     padding: 12px 35px;
   }
 }
+/*--------x---------- When Viewport Width is less than or equal to 800px ------------x-----------*/
 
+/*------------------- When Viewport Width is less than or equal to 767px ------------------------*/
 @media screen and (max-width: 767px) {
   .tip-wrapper {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -287,16 +326,21 @@ Responsive
     margin-top: 30px;
   }
 }
+/*--------x---------- When Viewport Width is less than or equal to 767px ------------x-----------*/
 
+/*------------------- When Viewport Width is less than or equal to 574px ------------------------*/
 @media screen and (max-width: 574px) {
   .tip-value h3 {
     font-size: 1.6rem;
   }
 }
+/*--------x---------- When Viewport Width is less than or equal to 574px ------------x-----------*/
 
+/*------------------- When Viewport Width is less than or equal to 400px ------------------------*/
 @media screen and (max-width: 400px) {
   .tip-percentages {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 1rem;
   }
 }
+/*--------x---------- When Viewport Width is less than or equal to 400px ------------x-----------*/

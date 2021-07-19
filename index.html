@@ -20,16 +20,24 @@
 </head>
 
 <body>
-
+  <!-- Main Section Start -->
   <main>
+    <!-- Container Start -->
     <div class="container">
 
+      <!-- Tip Logo Start -->
       <div class="tip-logo">
         <img src="images/logo.svg" alt="logo">
       </div>
+      <!-- Tip Logo End -->
 
+      <!-- Tip Wrapper Start -->
       <div class="tip-wrapper">
+
+        <!-- Tip Content Left Section Start -->
         <div class="tip-content-left">
+
+          <!-- Tip Bill Start -->
           <div class="tip-bill">
             <label>Bill</label>
             <div class="input-container">
@@ -38,10 +46,13 @@
               <p id="error" class="error"></p>
             </div>
           </div>
+          <!-- Tip Bill End -->
 
+          <!-- Tip Percentage Start -->
           <div class="tip-percentage">
             <label>Select Tip %</label>
 
+            <!-- Tip Percentage Buttons Start -->
             <div class="tip-percentages">
               <button class="btn btn-1" value="5" onclick="return validation(),calculateTip(this.value/100)">5%</button>
               <button class="btn btn-2" value="10"
@@ -55,9 +66,12 @@
               <input type="number" class="custom-tip-box" id="customTipBox" placeholder="Custom"
                 onkeyup="calculateTip(this.value/100)" onclick="calculateTip(this.value/100)">
             </div>
+            <!-- Tip Percentage Buttons End -->
 
           </div>
+          <!-- Tip Percentage End -->
 
+          <!-- Number of People Start -->
           <div class="tip-people-number">
             <label>Number of People</label>
             <div class="input-container">
@@ -65,51 +79,61 @@
               <img src="images/icon-person.svg" alt="person icon">
               <p id="error" class="error"></p>
             </div>
-
           </div>
+          <!-- Number of People End -->
         </div>
+        <!-- Number of Content Left Section End -->
 
-
+        <!-- Tip Content Right Section Start -->
         <div class="tip-content-right">
+
+          <!-- Tip Right Wrapper Start -->
           <div class="tip-right-wrapper">
 
+            <!-- Display Tip Amount Per Person Start -->
             <div class="inner-wrapper">
               <div class="tip-amount">
                 <p>Tip Amount</p>
                 <span>/ person</span>
               </div>
-
               <div class="tip-value">
                 <h3 id="displayTipAmount">$0.00</h3>
               </div>
-
             </div>
+            <!-- Display Tip Amount Per Person End -->
 
+            <!-- Display Total Amount Per Person Start -->
             <div class="inner-wrapper">
               <div class="tip-amount">
                 <p>Total</p>
                 <span>/ person</span>
               </div>
-
               <div class="tip-value">
                 <h3 id="displayTotalAmount">$0.00</h3>
               </div>
-
             </div>
+            <!-- Display Total Amount Per Person End -->
 
+            <!-- Reset Button Start -->
             <div class="button-reset">
               <button type="submit" class="btn-reset">Reset</button>
             </div>
           </div>
-
+          <!-- Reset Button End -->
         </div>
+        <!-- Tip Right Wrapper End -->
       </div>
+      <!-- Tip Wrapper End -->
     </div>
+    <!-- Container End -->
   </main>
+  <!-- Main Section Start -->
 
+  <!-- Footer Start -->
   <footer class="footer">
     <p>&copy; 2021 By Pranto Bapary. All Rights Reserved.</p>
   </footer>
+  <!-- Footer End -->
 
   <!--Main JavaScript -->
   <script src="js/main.js"></script>
