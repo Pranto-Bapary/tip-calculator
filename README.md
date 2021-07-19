@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-By creating this project I grasped a good knowledge about CSS Grid,Flexbox,Responsive Design and also leared JavaScript Dom Manipulation,Form Validation and how to handle errors.
+By creating this project I grasped a good knowledge about CSS Grid,Flexbox,Responsive Design and also learned JavaScript DOM Manipulation,Form Validation and how to handle errors.
 
 ### Useful resources
 
@@ -54,5 +54,5 @@ By creating this project I grasped a good knowledge about CSS Grid,Flexbox,Respo
 
 ## Author
 
-- Website - [Pranto Bapary](https://pranto-bapary.github.io/portfolio)
-- Frontend Mentor - [@pranto-bapary](https://www.frontendmentor.io/profile/pranto-bapary)
+- Github - [pranto-bapary](https://github.com/pranto-bapary)
+- Frontend Mentor - [@apranto-bapary](https://www.frontendmentor.io/profile/pranto-bapary)
